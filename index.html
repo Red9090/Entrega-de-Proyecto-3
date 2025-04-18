@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio</title>
+    
+    <!-- Link CSS -->
+    <link rel="stylesheet" href="./css/styles.css">
+    
+    <!-- Link BS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" 
+    rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">  
+</head>
+<body>
+    
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-custom">
+        <div class="container">
+            <a class="navbar-brand" href="../index.html">
+                <img src="./assets/logo.png" alt="Logo de Mi Sitio" width="40" height="40" class="d-inline-block align-text-top">
+            </a>          
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link" href="./pages/articulos.html">Artículos</a></li>
+            <li class="nav-item"><a class="nav-link" href="./pages/contacto.html">Contacto</a></li>
+            </ul>
+        </div>
+        </div>
+    </nav>
+
+    <!-- CAROUSEL -->
+    <!-- Las imagenes son enormes | no encontre imagenes adecuadas visualmente para el carrousel-->
+    <section id="carousel-section" class="my-5">
+        <div class="container-fluid px-3">
+        <div class="p-4 rounded-4 shadow-lg" style="background-color: #f8f9fa;">
+            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"></button>
+            </div>
+            <div class="carousel-inner rounded-4 overflow-hidden">
+                <div class="carousel-item active">
+                <img src="./assets/art5.png" class="d-block w-100" alt="Primera imagen">
+                </div>
+                <div class="carousel-item">
+                <img src="./assets/art2.png" class="d-block w-100" alt="Segunda imagen">
+                </div>
+                <div class="carousel-item">
+                <img src="./assets/art1.png" class="d-block w-100" alt="Tercera imagen">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <!-- Articulos-->
+    <section id="articles-section" class="my-5">
+    <div class="container-fuid px-4">
+        <h2 class="text-center mb-4">Artículos</h2>
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
+        <!-- Card 1 -->
+        <div class="col">
+            <div class="card shadow-sm border-light">
+            <img src="./assets/art4.png" class="card-img-top" alt="Artículo 1">
+            <div class="card-body">
+                <h5 class="card-title">Artículo 1</h5>
+                <p class="card-text">Descripción breve del artículo 1. Una introducción que capte la atención.</p>
+                <a href="#" class="btn btn-primary">Leer más</a>
+            </div>
+            </div>
+        </div>
+        <!-- Card 2 -->
+        <div class="col">
+            <div class="card shadow-sm border-light">
+            <img src="./assets/art4.png" class="card-img-top" alt="Artículo 2">
+            <div class="card-body">
+                <h5 class="card-title">Artículo 2</h5>
+                <p class="card-text">Descripción breve del artículo 2. Una introducción que capte la atención.</p>
+                <a href="#" class="btn btn-primary">Leer más</a>
+            </div>
+            </div>
+        </div>
+        <!-- Card 3 -->
+        <div class="col">
+            <div class="card shadow-sm border-light">
+            <img src="./assets/art4.png" class="card-img-top" alt="Artículo 3">
+            <div class="card-body">
+                <h5 class="card-title">Artículo 3</h5>
+                <p class="card-text">Descripción breve del artículo 3. Una introducción que capte la atención.</p>
+                <a href="#" class="btn btn-primary">Leer más</a>
+            </div>
+            </div>
+        </div>
+        <!-- Card 4 -->
+        <div class="col">
+            <div class="card shadow-sm border-light">
+            <img src="./assets/art4.png" class="card-img-top" alt="Artículo 4">
+            <div class="card-body">
+                <h5 class="card-title">Artículo 4</h5>
+                <p class="card-text">Descripción breve del artículo 4. Una introducción que capte la atención.</p>
+                <a href="#" class="btn btn-primary">Leer más</a>
+            </div>
+            </div>
+        </div>
+        <!-- Card 5 -->
+        <div class="col">
+            <div class="card shadow-sm border-light">
+            <img src="./assets/art4.png" class="card-img-top" alt="Artículo 5">
+            <div class="card-body">
+                <h5 class="card-title">Artículo 5</h5>
+                <p class="card-text">Descripción breve del artículo 5. Una introducción que capte la atención.</p>
+                <a href="#" class="btn btn-primary">Leer más</a>
+            </div>
+            </div>
+        </div>
+        <!-- Card 6 -->
+        <div class="col">
+            <div class="card shadow-sm border-light">
+            <img src="./assets/art4.png" class="card-img-top" alt="Artículo 6">
+            <div class="card-body">
+                <h5 class="card-title">Artículo 6</h5>
+                <p class="card-text">Descripción breve del artículo 6. Una introducción que capte la atención.</p>
+                <a href="#" class="btn btn-primary">Leer más</a>
+            </div>
+            </div>
+        </div>
+        <!-- Card 7 -->
+        <div class="col">
+            <div class="card shadow-sm border-light">
+            <img src="./assets/art4.png" class="card-img-top" alt="Artículo 7">
+            <div class="card-body">
+                <h5 class="card-title">Artículo 7</h5>
+                <p class="card-text">Descripción breve del artículo 7. Una introducción que capte la atención.</p>
+                <a href="#" class="btn btn-primary">Leer más</a>
+            </div>
+            </div>
+        </div>
+        <!-- Card 8 -->
+        <div class="col">
+            <div class="card shadow-sm border-light">
+            <img src="./assets/art4.png" class="card-img-top" alt="Artículo 8">
+            <div class="card-body">
+                <h5 class="card-title">Artículo 8</h5>
+                <p class="card-text">Descripción breve del artículo 8. Una introducción que capte la atención.</p>
+                <a href="#" class="btn btn-primary">Leer más</a>
+            </div>
+            </div>
+        </div>
+        </div>
+    </div>
+    </section>
+    <!-- FOOTER -->
+    <footer class="bg-custom text-white py-4 mt-5">
+        <div class="container text-center">
+        <p>&copy; 2025 Mi Sitio. Todos los derechos reservados.</p>
+        <div class="social-icons">
+            <a href="#" class="text-white mx-3">
+            <i class="bi bi-youtube fa-2x"></i>
+            </a>
+            <a href="#" class="text-white mx-3">
+            <i class="bi bi-instagram fa-2x"></i>
+            </a>
+            <a href="#" class="text-white mx-3">
+            <i class="bi bi-tiktok fa-2x"></i>
+            </a>
+            <a href="#" class="text-white mx-3">
+            <i class="bi bi-whatsapp fa-2x"></i>
+            </a>
+            <a href="#" class="text-white mx-3">
+            <i class="bi bi-twitter fa-2x"></i>
+            </a>
+            <a href="#" class="text-white mx-3">
+            <i class="bi bi-facebook fa-2x"></i>
+            </a>
+        </div>
+        </div>
+    </footer>
+    
+    <!-- Scripts BS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+</body>
+</html>

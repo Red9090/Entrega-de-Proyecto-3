@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <!-- Link CSS -->
+    <link rel="stylesheet" href="../css/styles.css">
+
+    
+    <!-- Link BS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" 
+    rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">  
+  </head>
+<body>
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-custom">
+      <div class="container">
+          <a class="navbar-brand" href="../index.html">
+              <img src="../assets/logo.png" alt="Logo de Mi Sitio" width="40" height="40" class="d-inline-block align-text-top">
+            </a>          
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link" href="articulos.html">Artículos</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- Columna 1: Preguntas frecuentes -->
+    <section class="container mt-5">
+      <div class="row">
+      <div class="col-lg-6 mb-4">
+          <h2 class="h4">Preguntas Frecuentes</h2>
+
+          <!-- Accordion de preguntas frecuentes -->
+          <div class="accordion" id="accordionPanelsStayOpenExample">
+              <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingOne">
+                      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                          ¿Cuál es nuestra dirección?
+                      </button>
+                  </h2>
+                  <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionPanelsStayOpenExample">
+                      <div class="accordion-body">
+                          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam vehicula urna non quam suscipit, at feugiat sem cursus.
+                      </div>
+                  </div>
+              </div>
+              <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingTwo">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                          ¿Cómo contactar con Atención al Cliente?
+                      </button>
+                  </h2>
+                  <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionPanelsStayOpenExample">
+                      <div class="accordion-body">
+                          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam vehicula urna non quam suscipit, at feugiat sem cursus.
+                      </div>
+                  </div>
+              </div>
+              <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingThree">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                          ¿Cuál es el horario de atención?
+                      </button>
+                  </h2>
+                  <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionPanelsStayOpenExample">
+                      <div class="accordion-body">
+                          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam vehicula urna non quam suscipit, at feugiat sem cursus.
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+
+    <!-- Columna 2-->
+    <div class="col-lg-6">
+        <h2 class="h4">Contáctanos</h2>
+        <!-- Formulario de contacto -->
+        <form action="#" method="post">
+            <div class="mb-3">
+                <label for="nombre" class="form-label">Nombre</label>
+                <input type="text" class="form-control" id="nombre" required>
+            </div>
+            <div class="mb-3">
+                <label for="email" class="form-label">Correo Electrónico</label>
+                <input type="email" class="form-control" id="email" required>
+            </div>
+            <div class="mb-3">
+                <label for="mensaje" class="form-label">Mensaje</label>
+                <textarea class="form-control" id="mensaje" rows="3" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Enviar</button>
+        </form>
+
+        <!-- Mapa de Google -->
+        <h3 class="mt-4">Nuestra Ubicación</h3>
+        <div class="map-container mt-3">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.013215364808!2d-58.38135543677064!3d-34.60382733252634!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccac6218c59b5%3A0xce7ec1612b2db9ce!2sLibertad%20581%2C%20C1012AAK%20Cdad.%20Aut%C3%B3noma%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1745013791063!5m2!1ses!2sar" 
+          width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+        </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="bg-custom text-center text-white py-4 mt-4">
+  <div>
+      <a href="#" class="text-white mx-2"><i class="bi bi-youtube"></i></a>
+      <a href="#" class="text-white mx-2"><i class="bi bi-instagram"></i></a>
+      <a href="#" class="text-white mx-2"><i class="bi bi-tiktok"></i></a>
+      <a href="#" class="text-white mx-2"><i class="bi bi-whatsapp"></i></a>
+      <a href="#" class="text-white mx-2"><i class="bi bi-twitter"></i></a>
+      <a href="#" class="text-white mx-2"><i class="bi bi-facebook"></i></a>
+  </div>
+</footer>
+
+ <!-- Scripts BS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+</body>
+</html>
