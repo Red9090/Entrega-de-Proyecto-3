@@ -1,5 +1,5 @@
-@use 'variables' as *; // Importa variables 
-@use 'mixins' as *;     // Importa mixins 
+@use 'variables'; // Importa variables 
+@use 'mixins';     // Importa mixins 
 @use 'base';            // Importa _base.scss
 @use 'layout';          // Importa _layout.scss
 @use 'components';      // Importa _components.scss
