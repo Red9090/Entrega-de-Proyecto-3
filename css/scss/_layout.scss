@@ -1,4 +1,47 @@
-header {
-    background-color: $header-bg;
+@use 'variables' as *;
+
+// NAVBAR
+.navbar {
+    background-color: $navbar-bg-color;
+    padding: 1rem 0;
+  
+    .nav-link {
+      color: $light-color;
+      font-weight: bold;
+      @include transition(color 0.3s ease-in-out);
+  
+      &:hover {
+        color: $primary-color;
+      }
+    }
+  
+    .navbar-brand img {
+      width: 40px;
+      height: 40px;
+    }
+  }
+  
+  // FOOTER
+  footer {
+    background-color: $footer-bg-color;
+    color: $light-color;
+    padding: 2rem 0;
+    text-align: center;
+  
+    p {
+      margin-bottom: 1rem;
+      font-size: 0.9rem;
+    }
+  
+    .social-icons a {
+      margin: 0 0.5rem;
+      color: $light-color;
+      font-size: 1.5rem;
+      @include transition(color 0.3s ease-in-out);
+  
+      &:hover {
+        color: $primary-color;
+      }
+    }
   }
   

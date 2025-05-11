@@ -1,7 +1,29 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
+// _base.scss
 
-  
+@use 'variables' as *; // Importa variables
+@use 'mixins' as *;    // Importa mixins
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: $bg-color;
+  color: $text-color;
+  font-family: $font-family-primary;
+  @include responsive-font($font-size-base, $line-height-base);
+  @include reset-margin-padding;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}

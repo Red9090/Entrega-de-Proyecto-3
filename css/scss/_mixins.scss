@@ -1,4 +1,64 @@
+// Reset de márgenes y padding
+@mixin reset-margin-padding {
+  margin: 0;
+  padding: 0;
+}
+
 @mixin transition($property) {
-    transition: $property 0.3s ease;
+  transition: $property 0.3s ease;
+}
+
+// Border-radius
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+  -moz-border-radius: $radius;
+  border-radius: $radius;
+}
+
+// Box-shadow
+@mixin box-shadow($x: 0px, $y: 2px, $blur: 4px, $color: rgba(0, 0, 0, 0.1)) {
+  box-shadow: $x $y $blur $color;
+}
+
+// Flexbox centrado
+@mixin flex-center($direction: row) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: center;
+  align-items: center;
+}
+
+// Mixin para fuentes responsive
+@mixin responsive-font($font-size, $line-height) {
+  font-size: $font-size;
+  line-height: $line-height;
+
+  @include respond-to(mobile) {
+    font-size: $font-size - 2px;
   }
-  
+
+  @include respond-to(tablet) {
+    font-size: $font-size + 1px;
+  }
+
+  @include respond-to(desktop) {
+    font-size: $font-size + 2px;
+  }
+}
+
+// MediaQueries
+@mixin respond-to($breakpoint) {
+  @if $breakpoint == mobile {
+      @media (max-width: 767px) { @content; }
+  }
+  @else if $breakpoint == tablet {
+      @media (max-width: 1024px) { @content; }
+  }
+  @else if $breakpoint == desktop {
+      @media (min-width: 1025px) { @content; }
+  }
+}
+
+@mixin mobile-styles {
+  margin: 0;
+}

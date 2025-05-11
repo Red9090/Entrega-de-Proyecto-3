@@ -1,15 +1,18 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+/* Error: Undefined mixin.
+ *    ,
+ * 11 |       @include transition(color 0.3s ease-in-out);
+ *    |       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ *    '
+ *   css\scss\_layout.scss 11:7  @use
+ *   css\scss\style.scss 4:1     root stylesheet */
 
-header {
-  background-color: #2c3e50;
-}
-
-.btn {
-  background-color: #3498db;
-  padding: 10px 20px;
-  border-radius: 5px;
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: "Error: Undefined mixin.\a    \2577 \a 11 \2502        @include transition(color 0.3s ease-in-out);\d\a    \2502        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\a    \2575 \a   css\\scss\\_layout.scss 11:7  @use\a   css\\scss\\style.scss 4:1     root stylesheet";
 }

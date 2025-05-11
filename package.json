@@ -2,8 +2,8 @@
   "devDependencies": {
     "sass": "^1.88.0"
   },
-  "scripts": {
-  "build-css": "sass ./css/scss/style.scss ./css/styles.css --no-source-map",
-  "watch-css": "sass --watch ./css/scss/style.scss:./css/styles.css --no-source-map"
-}
+  
+  "dependencies": {
+    "aos": "^2.3.4"
+  }
 }
